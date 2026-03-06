@@ -157,6 +157,106 @@ footer {
 }
 
 /* ***************** Add media query for the 588px screen ***************** */
+@media (min-width: 588px) {
+
+    /* ***************** header ***************** */
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.375rem;
+    }
+
+    nav li {
+        margin-bottom: 0;
+    }
+
+    /* ***************** main content ***************** */
+    section img {
+        width: 100%;
+    }
+
+    /* ***************** aside ***************** */
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.6875rem;
+    }
+
+    form label {
+        width: 100%;
+    }
+
+    form input[id="email"] {
+        width: auto; /* stops growing */
+        margin-bottom: 0;
+    }
+
+    form .btn {
+        width: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 980px) {
+
+    /* ***************** main content ***************** */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main > section {
+        width: 50%;
+    }
+
+    main > aside {
+        width: 100%;
+    }
+
+    .btn-center {
+        justify-content: flex-start;
+    }
+
+    /* ***************** footer ***************** */
+    footer p {
+        max-width: 60ch;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    /* ***************** utilities & containers ***************** */
+    .container {
+        max-width: 1720px;
+        margin: 0 auto;
+        padding: 0; /* removes mobile left/right padding */
+    }
+
+    /* ***************** main content ***************** */
+    main > section,
+    main > aside {
+        flex: 1; /* three equal columns */
+    }
+
+    /* ***************** footer ***************** */
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        margin: 0 auto 1.375rem auto;
+    }
+}
 
 /* ***************** footer ***************** */
 
