@@ -29,7 +29,7 @@ p {
     margin-bottom: 1.375rem;
 }
 
-/* ***************** header ***************** */
+/****************** header ******************/
 header {
     background-color: #57534E;
     padding: 1.375rem 0 0.6875rem 0;
@@ -159,7 +159,6 @@ footer {
 /* ***************** Add media query for the 588px screen ***************** */
 @media (min-width: 588px) {
 
-    /* ***************** header ***************** */
     header .container {
         display: flex;
         justify-content: space-between;
@@ -179,12 +178,10 @@ footer {
         margin-bottom: 0;
     }
 
-    /* ***************** main content ***************** */
     section img {
         width: 100%;
     }
 
-    /* ***************** aside ***************** */
     form {
         display: flex;
         flex-wrap: wrap;
@@ -197,7 +194,7 @@ footer {
     }
 
     form input[id="email"] {
-        width: auto; /* stops growing */
+        width: auto;
         margin-bottom: 0;
     }
 
@@ -209,7 +206,6 @@ footer {
 
 @media (min-width: 980px) {
 
-    /* ***************** main content ***************** */
     main {
         display: flex;
         flex-wrap: wrap;
@@ -235,20 +231,17 @@ footer {
 
 @media (min-width: 1920px) {
 
-    /* ***************** utilities & containers ***************** */
     .container {
         max-width: 1720px;
         margin: 0 auto;
-        padding: 0; /* removes mobile left/right padding */
+        padding: 0; 
     }
 
-    /* ***************** main content ***************** */
     main > section,
     main > aside {
-        flex: 1; /* three equal columns */
+        flex: 1;
     }
 
-    /* ***************** footer ***************** */
     footer {
         text-align: center;
     }
@@ -258,6 +251,3 @@ footer {
     }
 }
 
-/* ***************** footer ***************** */
-
-/* ***************** footer ***************** */
